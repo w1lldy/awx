@@ -10,4 +10,3 @@
     - name: Display the result
       debug:
         var: result.stdout
-    - ping:
