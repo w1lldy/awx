@@ -2,6 +2,8 @@
 - name: Test connection to Mikrotik
   hosts: all
   gather_facts: no
+  collections:
+    - name: community.routeros
   tasks:
     - name: Check connectivity
       routeros_command:
