@@ -1,0 +1,4 @@
+- name: Get system info
+  routeros_command:
+    commands:
+      - /system resource print
