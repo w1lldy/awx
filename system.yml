@@ -1,0 +1,9 @@
+---
+- name: Test connection to Mikrotik
+  hosts: all
+  gather_facts: no
+  tasks:
+    - name: Check connectivity
+      routeros_command:
+        commands:
+          - /system identity print
