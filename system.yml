@@ -7,6 +7,3 @@
     - name: Run a raw command on MikroTik
       raw: /system identity print
       register: result
-    - name: Display the result
-      debug:
-        var: result.stdout
